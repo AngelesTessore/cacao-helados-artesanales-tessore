@@ -19,6 +19,7 @@ header {
     align-content: space-around;
     position: sticky;
     top: 0;
+    z-index: 1;
     background-color: rgb(1, 20, 20);
 }
 nav{
@@ -85,6 +86,23 @@ li a:hover {
     padding: 80px;
     font-size: 30px;
     color: #feebeb;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* Animación texto */
+.frase-marca p{
+    animation: slide-text 4s;
+    text-align: center;
+}
+@keyframes slide-text {
+    from {
+        margin-left:100%;
+        width:300%
+      }
+      to {
+       margin-left:0%;
+       width:100%;
+     }
 }
 /* Nosotros */
 #nosotros {
@@ -132,6 +150,7 @@ h2 {
     background-size: cover;
     animation-name: slide;
     animation-duration: 10s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 @keyframes slide {
@@ -325,6 +344,13 @@ h2.subtitulo-sabores {
     height: max-content;
     text-align: center;
     margin-bottom: 60px;
+    /*Transición*/
+    transition: all 2s;
+    transition-timing-function: ease-out;
+}
+    /* Transformación */
+.sabor-dos:hover {
+    transform: scale(1.1);
 }
 .sabor-dos h3 {
     font-size: 20px;
@@ -380,6 +406,7 @@ h2.subtitulo-sabores {
     border-bottom: 1px solid rgb(54, 143, 150);
     padding: 20px 0px;
     color: #feebeb;
+    
 }
 .bloque .lista-productos:hover {
     box-shadow: 0px 0px 2px 1px rgb(54, 143, 150);
@@ -398,6 +425,12 @@ h2.subtitulo-sabores {
     justify-content: space-around;
     width: 100%;
     margin: 60px 0;
+    /* Transición */
+    transition: all 1s;
+}
+    /* Transformación */
+.pedidos:hover {
+    transform:scale(1.5);
 }
 .pedidos .icono-pedidos {
     width: 80px;
@@ -577,6 +610,10 @@ label[for=suscripcion] {
         font-size: 20px;
         padding: 60px;
         text-align: center;
+        white-space:normal;
+    }
+    .frase-marca p{
+        animation: none;
     }
     h1 {
         font-size: 36px;
