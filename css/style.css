@@ -592,7 +592,7 @@ label[for=suscripcion] {
 
 /* Media Queries */
 /* For Mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     /* INDEX */
     header {
         justify-content: space-around;
@@ -862,7 +862,7 @@ label[for=suscripcion] {
 }
 
 /* For Tablets */
-@media only screen and (min-width: 601px) and (max-width: 968px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
      /* INDEX */
      header {
         justify-content: space-around;
