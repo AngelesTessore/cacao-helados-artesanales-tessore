@@ -53,13 +53,13 @@ li a:hover {
     color: rgb(54, 143, 150);
 }
 .logo {
-    width: 10%;
-    height: 100px;
+    display: flex;
     background-color: rgb(1, 20, 20);
 }
 .logo-img {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
 }
 .primera-lista {
     display: flex;
@@ -212,26 +212,14 @@ p.recuadro a:link, p.recuadro a:visited, p.recuadro a:hover, p.recuadro a:active
 }
 /* Footer */
 footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: space-between;
-    width: 100%;
     padding: 20px 0;
-    font-size: 10px;
     background-color: rgb(1, 20, 20);
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 footer img {
-    width: 80px;
-    height: 80px;
-}
-footer .div-footer {
-    width: 20%;
-    padding-left: 30px;
-    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
 }
 .div-footer a{
     display: block;
@@ -247,15 +235,13 @@ footer .div-footer {
 }
 footer .socialmedia {
     display: flex;
-    justify-content: flex-end;
-    width: 82%;
     padding: 20px 0;
     box-sizing: border-box;
 }
 footer .socialmedia img {
     vertical-align: top;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin: 5px;
 }
 footer p.copyright {
@@ -680,24 +666,18 @@ label[for=suscripcion] {
         width: 25px;
         height: 25px;
     }
-    footer {
-        flex-direction: column;
-        align-items: center;
-        align-content: space-between;
-    }
     footer img {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
     footer .div-footer {
-        width: 50%;
+        width: 100%;
         text-align: center;
         padding-left: 0;
         padding-top: 10px;
     }
     footer .socialmedia {
-        width: 50%;
-        justify-content: center;
+        padding: 10px 0;
     }
     footer .socialmedia img {
         margin: 10px;
@@ -937,17 +917,12 @@ label[for=suscripcion] {
     .no-show-div {
         display: none
     }
-    footer {
-        flex-direction: column;
-        align-items: center;
-        align-content: space-between;
-    }
     footer img {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
     footer .div-footer {
-        width: 50%;
+        width: 100%;
         text-align: center;
         padding-left: 0;
         padding-top: 10px;
