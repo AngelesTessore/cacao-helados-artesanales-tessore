@@ -595,7 +595,7 @@ label[for=suscripcion] {
         text-align: center;
     }
     #nosotros .texto-nosotros {
-        width: 100%;
+        width: 75%;
         height: auto;
         text-align: center;
     }
@@ -863,6 +863,7 @@ label[for=suscripcion] {
         text-align: center;
     }
     .texto-nosotros p {
+        width: 75%;
         font-size: 16px;
         padding-bottom: 80px;
     }
