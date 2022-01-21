@@ -402,32 +402,9 @@ h2.subtitulo-sabores {
 /* Fin HTML Productos*/
 
 /* HTML Novedades/Promos */
-/* Grilla*/
-.grid-container-novprom {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: auto auto auto auto;
-}
-.grid-item-uno {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-.grid-item-dos {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-.grid-item-tres {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-}
-.grid-item-cuatro {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-}
-/* Fin Grilla */
 #novedades-promos {
-    display: flex;
+    width: 80%;
+    margin: auto;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -437,24 +414,23 @@ h2.subtitulo-sabores {
 .promos {
     height: 300px;
     display: flex;
+    width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     border: none;
     margin-bottom: 80px;
+    padding: 10px;
 }
 .promos:hover {
     box-shadow: 0px 0px 2px 1px rgb(54, 143, 150);
 }
 .promos h2 {
-    width: 60%;
     text-align: left;
     color: #feebeb;
 }
 .promos p, .promos a {
-    width: 60%;
-    text-align: left;
     padding: 20px;
     font-size: 18px;
     color: #feebeb;
@@ -465,7 +441,6 @@ h2.subtitulo-sabores {
     font-weight: bold;
 }
 .promos img {
-    width: 30%;
     height: auto;
     object-fit: cover;
 }
@@ -735,6 +710,10 @@ label[for=suscripcion] {
     }
     /* FIN PRODUCTOS */
     /* NOVEDADES/PROMOS */
+    #novedades-promos {
+        width: 80%;
+        margin: auto;
+    }
     .promos {
         height: max-content;
         width: 100%;
@@ -758,15 +737,11 @@ label[for=suscripcion] {
         text-align: center;
         word-wrap: break-word;
     }
-    .promos p {
-        order: 2
-    }
-    .promos a {
-        order: 4;
+    .custom-link {
+        text-align: center;
+        padding: 10px 0;
     }
     .promos img {
-        order: 3;
-        width: 60%;
         height: auto;
         max-height: 210px;
         padding: 10px 0;
@@ -987,10 +962,15 @@ label[for=suscripcion] {
     }
     /* FIN PRODUCTOS */
      /* NOVEDADES/PROMOS */
+     #novedades-promos {
+        width: 80%;
+        margin: auto;
+    }
      .promos {
         height: max-content;
         width: 100%;
-        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
@@ -1010,15 +990,11 @@ label[for=suscripcion] {
         text-align: center;
         word-wrap: break-word;
     }
-    .promos p {
-        order: 2
-    }
-    .promos a {
-        order: 4;
+    .custom-link {
+        text-align: center;
+        padding: 10px 0;
     }
     .promos img {
-        order: 3;
-        width: 60%;
         height: auto;
         max-height: 320px;
         padding: 10px 0;
