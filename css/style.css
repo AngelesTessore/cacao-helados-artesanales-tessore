@@ -346,7 +346,7 @@ h2.subtitulo-sabores {
 .productos {
     width: 100%;
     height: 550px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .productos .bloque {
     line-height: 2;
@@ -686,9 +686,7 @@ label[for=suscripcion] {
         padding-bottom: 30px;
     }
     .productos {
-        flex-direction: column;
         height: auto;
-        margin: 40px 0;
     }
     .productos .bloque {
         margin: 40px 0;
@@ -938,9 +936,7 @@ label[for=suscripcion] {
         padding-bottom: 30px;
     }
     .productos {
-        flex-direction: column;
         height: auto;
-        margin: 40px 0;
     }
     .productos .bloque {
         line-height: 1.5;
