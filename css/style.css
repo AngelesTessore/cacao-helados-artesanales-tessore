@@ -338,27 +338,17 @@ h2.subtitulo-sabores {
 
 /* HTML Productos */
 #seccion-productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     padding: 80px 0;
 }
 .principal {
     padding-bottom: 80px;
 }
 .productos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
     height: 550px;
     margin-bottom: 40px;
 }
 .productos .bloque {
-    width: 25%;
     line-height: 2;
     margin: 0px 40px;
 }
@@ -382,7 +372,6 @@ h2.subtitulo-sabores {
 }
 /* Imágenes a los costados */
 .productos .img-costados {
-    width: 25%;
     height: 450px;
     object-fit: cover;
 }
@@ -727,14 +716,13 @@ label[for=suscripcion] {
         margin: 40px 0;
     }
     .productos .bloque {
-        width: 50%;
         margin: 40px 0;
+        line-height: 1.5;
     }
     .bloque .lista-productos {
         font-size: 14px;
     }
     .productos .img-costados {
-        width: 50%;
         height: auto;
         max-height: 300px;
     }
@@ -980,17 +968,15 @@ label[for=suscripcion] {
         margin: 40px 0;
     }
     .productos .bloque {
-        width: 50%;
-        line-height: 2;
+        line-height: 1.5;
         margin: 40px 0;
     }
     .bloque .lista-productos {
         font-size: 16px;
     }
     .productos .img-costados {
-        width: 50%;
         height: auto;
-        max-height: 400px;
+        max-height: 450px;
     }
     .pedidos .icono-pedidos {
         width: 50px;
