@@ -469,19 +469,15 @@ form {
     text-align: left;
 }
 input[type=text], input[type=email] {
-    width: 100%;
     padding: 10px;
-    margin: 10px 0 30px 0;
     font-size: 14px;
     background-color: #feebeb;
     border-radius: 10px;
     border: none;
     box-sizing: border-box;
 }
-textarea {
-    width: 100%;
+.customize-textarea {
     padding: 10px;
-    margin: 10px 0;
     font-size: 14px;
     background-color: #feebeb;
     border-radius: 10px;
@@ -509,9 +505,10 @@ input[type=submit] {
 label {
     color: #feebeb;
     font-size: 16px;
+    padding-left: 10px;
 }
 label[for=suscripcion] {
-    padding: 10px;
+    padding: 0 10px;
 }
 /* Fin HTML Contacto */
 
@@ -712,7 +709,6 @@ label[for=suscripcion] {
     .promos {
         height: max-content;
         width: 100%;
-        flex-wrap: nowrap;
         box-sizing: border-box;
         border-top: 1px solid rgb(54, 143, 150);
         border-bottom: 1px solid rgb(54, 143, 150);
@@ -742,17 +738,16 @@ label[for=suscripcion] {
         padding: 0 0 60px 0;
     }
     .intro-form p {
-        text-align: left;
+        text-align: center;
         line-height: 2;
         font-size: 14px;
-        padding-left: 30px;
+        padding: 0 40px;
     }
     form {
         width: 65%;
         height: auto;
     }
     input[type=text], input[type=email] {
-        margin-bottom: 15px;
         font-size: 12px;
     }
     textarea {
@@ -997,7 +992,6 @@ label[for=suscripcion] {
         height: auto;
     }
     input[type=text], input[type=email] {
-        margin-bottom: 15px;
         font-size: 12px;
     }
     textarea {

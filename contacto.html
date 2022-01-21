@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Normalize CSS-->
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -78,26 +78,38 @@
                 Ingresá tus datos en los siguientes campos:
             </p>
         </div>
-        <!-- Formulario -->
+        <!-- Formulario - Bootstrap -->
         <form action="#">
-            <label for="nombre-apellido">Nombre y Apellido:</label><br>
-            <input type="text" id="nombre-apellido" name="nombreyapellido" placeholder="Escribe tu nombre"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com"><br>
-            <label for="tel">Teléfono:</label><br>
-            <input type="text" ide="tel" name="tel" placeholder="Código de área sin 0 + Número sin el 15"><br>
-            <label for="mensaje">Consulta:</label><br>
-            <textarea name="consulta" id="consulta" cols="60" rows="6" placeholder="Dejanos tu mensaje"></textarea><br>
+            <div class="mb-3">
+                <label for="nombre-apellido" class="form-label">Nombre y Apellido:</label><br>
+                <input type="text" class="form-control" id="nombre-apellido" name="nombreyapellido"
+                    placeholder="Escribe tu nombre"><br>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label><br>
+                <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@gmail.com"><br>
+            </div>
+            <div class="mb-3">
+                <label for="tel" class="form-label">Teléfono:</label><br>
+                <input type="text" class="form-control" id="tel" name="tel" placeholder="Código de área sin 0 + Número sin el 15"><br>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Consulta:</label><br>
+                <textarea class="form-control customize-textarea" name="consulta" id="consulta" cols="60" rows="6"
+                    placeholder="Dejanos tu mensaje"></textarea><br>
+            </div>
             <input type="submit" value="Enviar"><br>
-            <input type="checkbox" id="suscripcion" name="aceptar">
-            <label for="suscripcion">Quiero recibir notificaciones</label><br>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="suscripcion" name="aceptar">
+                <label class="form-check-label" for="suscripcion">Quiero recibir notificaciones</label><br>
+            </div>
         </form>
     </section>
     <!-- Footer - Bootstrap -->
     <footer class="container-fluid">
         <div class="row align-items-center justify-content-around">
             <div class="col-12 col-lg-2 align-self-start div-footer">
-            <img src="images/logo-negocio.png" alt="Logo Cacao Helados Artesanales">
+                <img src="images/logo-negocio.png" alt="Logo Cacao Helados Artesanales">
             </div>
             <div class="col-12 col-lg-2 align-self-start div-footer">
                 <a href="#nosotros">Nosotros</a>
